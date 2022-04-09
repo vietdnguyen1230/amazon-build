@@ -18,6 +18,7 @@ function Header() {
             width={150}
             objectFit="contain"
             className="cursor-pointer"
+            alt=""
           />
         </div>
 
