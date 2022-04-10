@@ -8,9 +8,9 @@ import { selectItems, selectTotal } from "../slices/basketSlice";
 import CheckoutProduct from "../components/CheckoutProduct";
 
 function Checkout() {
-  const { data: session } = useSession();
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
+  const { data: session } = useSession();
 
   return (
     <div className="bg-gray-100 min-h-screen">
