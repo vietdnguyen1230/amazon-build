@@ -5,7 +5,7 @@ import ProductFeed from "../components/ProductFeed";
 import { getSession, useSession } from "next-auth/react";
 
 export default function Home({ products }) {
-  const [session, loading] = useSession();
+  const { data: session, loading } = useSession();
 
   return (
     <div className="bg-gray-100 ">
