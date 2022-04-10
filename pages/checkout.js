@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { selectItems, selectTotal } from "../slices/basketSlice";
 import CheckoutProduct from "../components/CheckoutProduct";
 
-function checkout() {
+function Checkout() {
   const { data: session } = useSession();
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
@@ -82,4 +82,4 @@ function checkout() {
   );
 }
 
-export default checkout;
+export default Checkout;
